@@ -4,16 +4,22 @@ import { ArrowRight, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
+    title: "BESA Election Campaign",
+    category: "Flier Designing",
+    image: "/images/MIMI.jpg",
+    description: "Campaign flier for Miracle for Welfare Director, Biomedical Engineering Students' Association (ABUAD-BESA) Chapter."
+  },
+  {
+    title: "Event Promotion",
+    category: "Flier Designing",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1000&auto=format&fit=crop",
+    description: "Modern minimalist flier design for a corporate networking event."
+  },
+  {
     title: "Brand Identity Revamp",
     category: "Brand Designing",
     image: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=1000&auto=format&fit=crop",
     description: "Complete visual identity redesign for a local tech startup, including logo, color palette, and typography guidelines."
-  },
-  {
-    title: "Summer Festival Fliers",
-    category: "Flier Designing",
-    image: "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=1000&auto=format&fit=crop",
-    description: "Vibrant and engaging promotional materials for a city-wide summer music and arts festival."
   },
   {
     title: "Corporate ID System",
@@ -35,7 +41,7 @@ export const Projects = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
 
   return (
     <section ref={targetRef} className="h-[200vh] bg-cream-200 relative">
